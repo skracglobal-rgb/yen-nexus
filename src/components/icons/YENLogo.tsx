@@ -1,9 +1,16 @@
+// YEN Logo Component
+// To replace this logo with your own:
+// 1. Replace this file content with your SVG logo, OR
+// 2. Import an image: import logo from "@/assets/yen-logo.svg" and use <img src={logo} />
+
 interface YENLogoProps {
   className?: string;
   size?: number;
 }
 
 const YENLogo = ({ className, size = 48 }: YENLogoProps) => {
+  // REPLACE THIS SVG WITH YOUR OWN LOGO
+  // You can paste your SVG code here or use an image import
   return (
     <svg
       width={size}
@@ -46,3 +53,28 @@ const YENLogo = ({ className, size = 48 }: YENLogoProps) => {
 };
 
 export default YENLogo;
+
+/*
+ * HOW TO USE YOUR OWN LOGO:
+ * 
+ * Option 1: Replace SVG directly
+ * - Edit the SVG code above with your own logo SVG
+ * 
+ * Option 2: Use an image file
+ * - Upload your logo to src/assets/yen-logo.svg (or .png)
+ * - Replace this component with:
+ * 
+ * import logo from "@/assets/yen-logo.svg";
+ * 
+ * const YENLogo = ({ className, size = 48 }: YENLogoProps) => {
+ *   return (
+ *     <img 
+ *       src={logo} 
+ *       alt="YEN Kerala Logo" 
+ *       width={size} 
+ *       height={size} 
+ *       className={className}
+ *     />
+ *   );
+ * };
+ */
